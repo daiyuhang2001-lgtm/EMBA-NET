@@ -1,0 +1,57 @@
+{
+  "original": {
+    "input": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "training_parameters": 2314132,
+    "deployment_parameters": 2117012,
+    "deployment_flops": 13531381760,
+    "deployment_gflops": 13.53138176,
+    "convention": "2 FLOPs/MAC; convolution + GEMM; includes functional DEConv; excludes norm/activation/pooling/interpolation/elementwise/decode/NMS"
+  },
+  "figure_aligned": {
+    "input": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "training_parameters": 2313702,
+    "deployment_parameters": 2096350,
+    "deployment_flops": 8727522560,
+    "deployment_gflops": 8.72752256,
+    "convention": "2 FLOPs/MAC; convolution + GEMM; includes functional DEConv; excludes norm/activation/pooling/interpolation/elementwise/decode/NMS"
+  },
+  "parameters_difference_from_original": -430,
+  "fusion_640_max_abs_error": 0.0001983642578125,
+  "onnxruntime_640_max_abs_error": 0.00189208984375,
+  "onnx_box_max_abs_error_px": 0.00189208984375,
+  "onnx_score_max_abs_error": 1.7415732145309448e-07,
+  "onnx_tolerance": {
+    "box_input_pixels": 0.01,
+    "probability": 1e-05
+  },
+  "onnx_checker": true,
+  "onnxruntime_output_shape": [
+    1,
+    5,
+    33600
+  ],
+  "flops_counter_matches_torch_conv_gemm_profiler": true,
+  "unit_tests": {
+    "passed": 15
+  },
+  "gpu_real_data_smoke": {
+    "batch": 2,
+    "imgsz": 640,
+    "optimizer_step_and_validation_forward": true
+  },
+  "accuracy_reproduced": false,
+  "scope": "one real-data optimizer update only; no completed training or claimed mAP",
+  "release": "0.4.1 8.73G configuration",
+  "structure_basis": "v0.4 figure topology retained; GLM widths and active RepConv branch allocation changed",
+  "training_stability": "gradient-norm clipping at 10 in smoke and formal training; finite PyTorch and ONNX outputs verified"
+}

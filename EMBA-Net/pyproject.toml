@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emba-net-focused"
+version = "0.4.1"
+description = "Focused extraction of a custom model from a user-supplied Ultralytics fork"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["torch>=2.2", "numpy>=1.23,<2", "PyYAML>=6", "einops>=0.6", "Pillow>=9"]
+
+[tool.setuptools]
+packages = ["emba_net"]

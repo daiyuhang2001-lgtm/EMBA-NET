@@ -1,0 +1,14 @@
+model: configs/EMBA-Net.yaml
+data: data/birddrop.yaml
+nc: 1
+scale: n
+epochs: 300
+batch: 4
+imgsz: 640
+optimizer: SGD
+lr: 0.01
+weight_decay: 0.0005
+momentum: 0.937
+seed: 0
+workers: 0
+device: auto

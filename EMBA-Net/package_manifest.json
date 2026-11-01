@@ -1,0 +1,231 @@
+{
+  "release": "0.4.1 8.73G configuration",
+  "root_folder": "EMBA-Net-Run",
+  "files": [
+    {
+      "path": "00_仅检查模型与预算.bat",
+      "sha256": "3afc24acb1e21b288abfe1012949b108a4a075f2eb265c3b003397e93d340b0e",
+      "bytes": 271
+    },
+    {
+      "path": "01_检查模型和数据.bat",
+      "sha256": "7046f9d5e84013e6b416529032097895986c48cfd2148967c0ee3df63e280b49",
+      "bytes": 494
+    },
+    {
+      "path": "02_试跑一个训练批次.bat",
+      "sha256": "d3508907a903effe9a402688d98392f1b9c3c388ec0f47f7b5408fd41b6e0910",
+      "bytes": 494
+    },
+    {
+      "path": "03_开始训练.bat",
+      "sha256": "f35b9553b0ca0ff5d22c50dd0d7f189d81ecd68e8f651ce04e68adb3aa33c877",
+      "bytes": 494
+    },
+    {
+      "path": "configs/EMBA-Net-baseline.yaml",
+      "sha256": "3049b3fbca39211a46323536d2e64c47eb195b0ee245ad109db5d75f3e1ca374",
+      "bytes": 783
+    },
+    {
+      "path": "configs/EMBA-Net.yaml",
+      "sha256": "2afec5f08af92dfdac90fbe887c8f4330010cbbd7bc7faba1e5d3f3fa10099a1",
+      "bytes": 1324
+    },
+    {
+      "path": "configs/train.yaml",
+      "sha256": "731d42d690b5e94dac140839c6e1dbaa260f48312948f1447e20b95d77bd721c",
+      "bytes": 208
+    },
+    {
+      "path": "data/birddrop.yaml",
+      "sha256": "18f9e687b5c4948fda131d99d6475d069ff54fd5b05a9c6ef61e6f754c5060ab",
+      "bytes": 167
+    },
+    {
+      "path": "emba_net/__init__.py",
+      "sha256": "bab3859813cc1752689720f50f4d0eeed60bd0aaf2168b88b3a37fa55cae402b",
+      "bytes": 357
+    },
+    {
+      "path": "emba_net/assigner.py",
+      "sha256": "a47010f5b0c6ccee1c749fdf2d7a6e32fbd3062ce17dea99da2cb55d5d0622d3",
+      "bytes": 13211
+    },
+    {
+      "path": "emba_net/backbone.py",
+      "sha256": "9815bc164a31eb99a2a6a336a5b91754fb7a82e862f027ee995fab601d7566af",
+      "bytes": 2322
+    },
+    {
+      "path": "emba_net/common.py",
+      "sha256": "d4ec74f975f6802170288edaa3212900a21ba2bdb7f654de7f104438d48ba364",
+      "bytes": 4718
+    },
+    {
+      "path": "emba_net/complexity.py",
+      "sha256": "6647fe90ebb986c45559f29a3baa6fe00710008c412a8ac04d19ab78666ef39f",
+      "bytes": 2380
+    },
+    {
+      "path": "emba_net/data.py",
+      "sha256": "16d7600f5695a7a9a8ae09446b050465085ddd792ac63f6e93a300285f4745bb",
+      "bytes": 2408
+    },
+    {
+      "path": "emba_net/deconv.py",
+      "sha256": "70d27be3cf62966660d9afe76c67baee0acc365e3ac41aac7bf0035091361563",
+      "bytes": 5797
+    },
+    {
+      "path": "emba_net/figure_bgsa.py",
+      "sha256": "fff00453c6904201937321eb90d9942a525a624a60cf3194c4177b48f192ada2",
+      "bytes": 1254
+    },
+    {
+      "path": "emba_net/gated_projection.py",
+      "sha256": "f8a9ec32c3b5dd7f0dc2dcc9a6c9698bc864caa24aa2087aeb7e544b4d8a4c30",
+      "bytes": 1642
+    },
+    {
+      "path": "emba_net/geometry.py",
+      "sha256": "5dac13fb819a14cd4747944f48f3ac48200ecfa659b0e39dc544532891e61e62",
+      "bytes": 11345
+    },
+    {
+      "path": "emba_net/glm_paper.py",
+      "sha256": "feef006708d027434f4aa52646a7e9b9dce1d99026d5f2433170e0fc18c4cb44",
+      "bytes": 1296
+    },
+    {
+      "path": "emba_net/glm_pb.py",
+      "sha256": "16d0107b44076ceeaebe3258259973a458a983d5af114a262ac6773f3d378cfa",
+      "bytes": 4923
+    },
+    {
+      "path": "emba_net/inference.py",
+      "sha256": "a6a8f7cb7818c8f5edd486129e027abda6ef63de1a124c58c1306fe1852fdd87",
+      "bytes": 3088
+    },
+    {
+      "path": "emba_net/loss.py",
+      "sha256": "ca71cdc66d2fa3b31014968633cd0e3b3b22c0f621f0c834b01ce00a2218be5b",
+      "bytes": 4396
+    },
+    {
+      "path": "emba_net/lsd_head.py",
+      "sha256": "aeb088e460c5d77e6a0447ff229bc40dbe638b536b116a1d01e736d475a6be66",
+      "bytes": 5633
+    },
+    {
+      "path": "emba_net/lsd_paper.py",
+      "sha256": "c2fd85f00ee1bcba70f59960ac1fd5752deb249e1431588cda2f4b4eb5832202",
+      "bytes": 2595
+    },
+    {
+      "path": "emba_net/model.py",
+      "sha256": "7e2a1caf74904a33c68e5430f9348010ff6cb1adb9a467f4b7227f5883a686ca",
+      "bytes": 10092
+    },
+    {
+      "path": "emba_net/original_bgsa.py",
+      "sha256": "f34f8b53a56a6d39b4480313a76a8635d23e1d7870f9d0bb0f02a921138dc4c4",
+      "bytes": 1707
+    },
+    {
+      "path": "emba_net/repconv.py",
+      "sha256": "b5ec0cf92f0ac359716e69e75c5feaa116600be3ea1dbdb7a1042d2200cdfe6b",
+      "bytes": 2787
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "bytes": 34523
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "585a5103f36f6eef0f4861105de486e3352076f6d55eef7d2e4ccf17ffe42b1c",
+      "bytes": 7521
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "7384917769070d1d1b1696e799a39a1a080e43932c1c2cf4c48fcbbf08f782a9",
+      "bytes": 442
+    },
+    {
+      "path": "README.md",
+      "sha256": "f5f898286421dbc392466e4c19d1c08cff838c78716bc775b4efc30296be40f2",
+      "bytes": 6208
+    },
+    {
+      "path": "requirements-export.txt",
+      "sha256": "bb68112a83252807326e167b58963ff13e50d77eb6639e572a219f7c183ada41",
+      "bytes": 52
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "3997dc99cd291ad1046092b95cd443b13be5c4ea1ae9bab88da2c4ed9f66fbaf",
+      "bytes": 63
+    },
+    {
+      "path": "run.py",
+      "sha256": "2aedc5b208a686f89a24fddea22b19466db8d5a4fab36044cec9eda00a021688",
+      "bytes": 9020
+    },
+    {
+      "path": "STRUCTURE_MAP.md",
+      "sha256": "ab9a2e37384d93be6795f3e73d8df36adb77adbdc49f9ed2847da4ce71ed47db",
+      "bytes": 4834
+    },
+    {
+      "path": "tests/test_figure_topology.py",
+      "sha256": "b8d0a9b67f7a1d14cd3b850d5b467a007889994a20f25acea22f74a5b2456ff6",
+      "bytes": 4205
+    },
+    {
+      "path": "tests/test_model.py",
+      "sha256": "5aba72faa3f73d2a0b6dc5f03734ac643b98b22476d8c589b911880d995eef3e",
+      "bytes": 4758
+    },
+    {
+      "path": "tests/test_paper_alignment.py",
+      "sha256": "af7f5a4cd743aa3f36462b442fcae70ef48256489fb3dda5a9ad1f112f8770d2",
+      "bytes": 3152
+    },
+    {
+      "path": "tools/check_model.py",
+      "sha256": "3456b51d1260b5dd1cb126efa38a1c8b650710ef3007055b71a0cc0f692a13ce",
+      "bytes": 1153
+    },
+    {
+      "path": "tools/convert_deploy.py",
+      "sha256": "444963f83fd1581baa4ae57951a0593b8e3a7487945178f63665a5ced7644a33",
+      "bytes": 868
+    },
+    {
+      "path": "tools/export_onnx.py",
+      "sha256": "7cde175ec1ba715c9a93019f78827b9a4b51800d9b312285f721db116ebb93b6",
+      "bytes": 2581
+    },
+    {
+      "path": "tools/predict.py",
+      "sha256": "461e1bac7b0724f8c24d7b687a17fdcc03ace69b25e63439903b0a3996c3886d",
+      "bytes": 1426
+    },
+    {
+      "path": "tools/profile_model.py",
+      "sha256": "7230239c7ba4b6c83bcc71196221ee4a86a6ef72ff2c985bd9b829fdf714c9e1",
+      "bytes": 792
+    },
+    {
+      "path": "tools/train.py",
+      "sha256": "d76aea7b2b19e98964636c5f1f6821dc1a8ac0ca253b1a69f92995dec13e9f3c",
+      "bytes": 4721
+    },
+    {
+      "path": "verification.json",
+      "sha256": "69ed466101709eb08b4a3592d49759d041b66be7bc395042e03d84b6d9e4be34",
+      "bytes": 1860
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+# PVFeaturePerceptionNet backbone with BGSA, GLM-P B and LSDheadreplacement.
+# Derived from the supplied Ultralytics YOLO fork; see LICENSE and NOTICE.md.
+nc: 1
+release: v0.4.1-8.73G
+implementation: figure_aligned
+rep_branches:
+  11: 1
+  13: 1
+  15: 1
+  17: 2
+  19: 2
+glm_hidden:
+  11: 24
+  13: 4
+  15: 8
+  17: 4
+  19: 36
+scales:
+  # [depth, width, max_channels]; retained from the supplied configuration.
+  n: [0.33, 0.25, 1024]
+  s: [0.33, 0.50, 1024]
+  m: [0.67, 0.75, 768]
+  l: [1.00, 1.00, 512]
+  x: [1.00, 1.25, 512]
+
+backbone:
+  # The focused builder expands this to existing stages 0..9.
+  - [-1, 1, PVFeaturePerceptionNet, []]
+
+# Head references retain the original global stage numbers.
+head:
+  - [[-1, 6], 1, BGSA, []] # 10 (P4/16)
+  - [-1, 3, GLM_P_B, [512]] # 11
+
+  - [[-1, 4], 1, BGSA, []] # 12 (P3/8)
+  - [-1, 3, GLM_P_B, [256]] # 13
+
+  - [[-1, 2], 1, BGSA, []] # 14 (P2/4)
+  - [-1, 3, GLM_P_B, [128]] # 15
+
+  - [[-1, 13], 1, BGSA, []] # 16 (P3/8，重复利用之前的P3输出进行进一步处理)
+  - [-1, 3, GLM_P_B, [256]] # 17
+
+  - [[-1, 11], 1, BGSA, []] # 18 (P4/16，重复利用之前的P4输出)
+  - [-1, 3, GLM_P_B, [512]] # 19
+
+
+  - [[15, 17, 19], 1, LSDheadreplacement, [nc, 64]]    # Detect(P2, P3, P4)，已移除P5 1.准确率 大2.计算量小
