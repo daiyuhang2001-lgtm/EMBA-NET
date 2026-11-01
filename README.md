@@ -1,0 +1,1 @@
+This project is based on the remote positioning of bird droppings on photovoltaic panels. The algorithm has 2.31 parameters and an 8.7 floating-point operation count, achieving an mAP50 of 90.42±0.12 for bird droppings on the panels.
